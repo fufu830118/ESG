@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>節能減碳 - 綠色未來</title>
+    <style>
+        :root {
+            --primary-color: #007bff; /* Blue, similar to tech companies */
+            --secondary-color: #28a745; /* Green for environmental theme */
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600/007bff/ffffff?text=Energy+Saving+Future') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--light-gray);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .grid-item p {
+            color: var(--dark-gray);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            header .container {
+                flex-direction: column;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .btn {
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">綠色未來</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#solutions">解決方案</a></li>
+                    <li><a href="#impact">影響與數據</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>共創節能減碳的永續未來</h1>
+        <p>攜手邁向綠色生活，為地球盡一份心力，實現能源效率與環境保護的雙贏。</p>
+        <a href="#solutions" class="btn">了解更多</a>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p>我們致力於推廣節能減碳的理念與實踐，提供創新的解決方案，協助企業與個人降低碳足跡，共同應對氣候變遷的挑戰。我們相信，透過科技與行動，可以為下一代創造一個更美好的地球。</p>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <div class="container">
+            <h2>我們的解決方案</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>智慧能源管理</h3>
+                    <p>利用物聯網技術監控能源消耗，優化能源使用效率，實現智慧化節能。</p>
+                </div>
+                <div class="grid-item">
+                    <h3>綠色建築設計</h3>
+                    <p>推廣採用環保建材與節能設計，減少建築物在生命週期中的能源消耗。</p>
+                </div>
+                <div class="grid-item">
+                    <h3>再生能源應用</h3>
+                    <p>鼓勵並協助導入太陽能、風能等再生能源，降低對傳統化石燃料的依賴。</p>
+                </div>
+                <div class="grid-item">
+                    <h3>碳足跡盤查與管理</h3>
+                    <p>協助企業進行碳排放量計算與分析，制定有效的減碳策略。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact">
+        <div class="container">
+            <h2>影響與數據</h2>
+            <p>我們的努力已帶來顯著成效。以下是一些關鍵數據：</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>減少碳排放</h3>
+                    <p>每年協助客戶減少數千噸碳排放。</p>
+                </div>
+                <div class="grid-item">
+                    <h3>能源效率提升</h3>
+                    <p>平均為合作夥伴提升15%的能源使用效率。</p>
+                </div>
+                <div class="grid-item">
+                    <h3>綠色能源採用</h3>
+                    <p>推動超過50個專案採用再生能源。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>聯絡我們</h2>
+            <p>如果您對節能減碳有任何疑問或合作意向，歡迎隨時與我們聯繫。</p>
+            <p>Email: info@greenfuture.com</p>
+            <p>電話: +886-2-1234-5678</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 綠色未來. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
